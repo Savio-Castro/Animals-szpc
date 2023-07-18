@@ -1,0 +1,151 @@
+body {
+    font-family: "Oxanium", cursive;
+    background-image: url(../imagens/floresta\ \(1\).jpg);
+    background-repeat: repeat;
+    background-size: cover;
+    background-position: center;
+    color: #ffffff;
+}
+
+body::before{
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+}
+
+
+.Fuzzy{
+    font-family: "Fuzzy";
+    font-size: 3em;
+    color: #189218;
+    text-shadow: 5px 2px 5px #8beb32;
+     
+}
+
+.Dash{
+    font-family: "Dash";
+    font-size: 4em;
+    color: #189218;
+    text-shadow: 5px 2px 5px #8beb32;
+}
+
+.branco{
+    color:#36dd44;
+}
+
+@font-face {
+    font-family: "Fuzzy";
+    src: url(../fonts/Fuzzywuzzywasafont-Regular.woff);
+}
+
+@font-face {
+    font-family: "Dash";
+    src: url(../fonts/Dash9812.woff);
+}
+
+.cabecalho {
+    display: flex;
+    justify-content: center;
+}
+
+.selecao-de-personagens {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    min-height: calc(100vh -152px);
+    justify-content: center;
+}
+
+.selecao-de-personagens .lista-de-personagens {
+    display: flex;
+    flex-wrap: wrap;
+    /*Envolver*/
+    gap: 30px;
+    /*Espaçamento*/
+    justify-content: center;
+}
+
+.selecao-de-personagens .personagens {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 585px;
+    gap: 25px;
+}
+
+.selecao-de-personagens .personagens .titulo {
+    font-size: 20px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    border-bottom: 2px solid #47ff47;
+    width: 100%;
+    text-align: center;
+}
+
+.lista-de-personagens .personagem img {
+    width: 100%;
+    height: 100%;
+}
+
+.lista-de-personagens .personagem.selecionado {
+    box-shadow: 0px 0px 24px 5px #e48913;
+}
+
+.personagem-selecionado {
+    text-align: center;
+    max-height: 530px;
+    background-color: rgba(51, 255, 0, 0.062);
+}
+
+.personagem-selecionado .personagem-grande {
+    width: 430px;
+    height: 430px;
+      background-color: rgba(51, 255, 0, 0.062);
+}
+
+.personagem-selecionado .nome-personagem {
+    border-bottom: 2px solid #2fa312;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+}
+
+.personagem-selecionado .descricao-personagem {
+    font-size: 16px;
+    line-height: 22px;
+    text-align: center;
+    margin-top: 20px;
+    width: 420px;
+    background-color: rgba(51, 255, 0, 0.062)
+}
+
+
+.btn-play {
+    font-size: 20px;
+    padding: 10px 20px;
+    background-color: #ccc;
+    color: white;
+    border-radius: 360px;
+    border: solid 1px white;
+  }
+
+.btn-play:hover {
+    background-color: #ccc;
+    color: white;
+    border-radius: 360px;
+    border: solid 2px white;
+  }
+
+  .personagens{
+    height: 400px; /* Defina a altura desejada para a seção */
+    overflow: auto; /* Adiciona a barra de rolagem caso o conteúdo ultrapasse a altura */
+    background-color: rgba(51, 255, 0, 0.171);
+}
+
+  
+
+  
+
+  
+  

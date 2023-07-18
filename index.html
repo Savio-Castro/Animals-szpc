@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projeto Animals - Semana do Zero Ao Programador Contratado</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Oxanium:wght@300;400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./src/css/reset.css">
+  <link rel="stylesheet" href="./src/css/estilos.css">
+  <link rel="stylesheet" href="./src/css/responsivo.css">
+</head>
+
+<body>
+  <header class="cabecalho">
+    <!-- <img class="logo" src="./src/imagens/logo.svg" alt="Logo x-men"> -->
+    <h2 class="Dash"><span class="branco">Ani</span>mals</h2>
+  </header>
+
+  <main class="selecao-de-personagens">
+    <section class="personagens">
+      <h1 class="titulo">Selecione um animal</h1>
+      <ul class="lista-de-personagens">
+        <li class="personagem selecionado" id="leao" data-name="Leão"
+          data-description="Leões são majestosos felinos que habitam a savana africana. Conhecidos por suas crinas imponentes, são símbolos de força e liderança. Em grupos chamados de coalizões, eles caçam em conjunto, mostrando sua habilidade e estratégia.">
+          <img src="./src/imagens/leao-removebg-preview.png" alt="Leão" />
+        </li>
+        <li class="personagem" id="tigre" data-name="Tigre"
+          data-description="Tigres são felinos impressionantes encontrados principalmente na Ásia. Com suas listras únicas e porte atlético, são considerados um dos maiores predadores terrestres. Dotados de força e agilidade, os tigres são caçadores solitários e habilidosos, símbolos de beleza selvagem e poder indomável.">
+          <img src="./src/imagens/tigre-removebg-preview.png" alt="Tigre" />
+        </li>
+
+        <li class="personagem" id="onca" data-name="Onça-pintada"
+          data-description="A onça-pintada é um felino nativo das Américas, conhecido por sua bela pelagem pintada de manchas escuras em um fundo dourado. É o maior felino das Américas e possui uma poderosa mandíbula.">
+          <img src="./src/imagens/onca-removebg-preview.png" alt="Onça-pintada" />
+        </li>
+
+        <li class="personagem" id="leopardo_das_neves" data-name="Leopardo das Neves"
+          data-description="Um felino elegante e adaptado às montanhas, o leopardo das neves possui uma pelagem espessa e manchada, que o ajuda a se camuflar na neve. É um predador habilidoso e ágil, capaz de saltar grandes distâncias para capturar suas presas">
+          <img src="./src/imagens/leopardo-neves-removebg-preview.png" alt="Leopardo das Neves" />
+        </li>
+
+        <li class="personagem" id="puma" data-name="Puma"
+          data-description="O puma, também conhecido como leão-da-montanha ou suçuarana, é um felino nativo das Américas. Reconhecido por sua agilidade e força, o puma possui uma pelagem geralmente castanha ou cinza, adaptada para se camuflar em seu ambiente. ">
+          <img src="./src/imagens/puma-removebg-preview.png" alt="Puma" />
+        </li>
+
+        <li class="personagem" id="pantera" data-name="Pantera"
+          data-description="A pantera negra é um animal pertencente à família dos grandes felinos, e está presente na Ásia, África e nas Américas. A pantera negra em si não é uma espécie distinta, e sim um termo usado para se referir a qualquer animal de coloração preta dentre os grandes felinos, especialmente as onças e os leopardos.">
+          <img src="./src/imagens/pantera-removebg-preview.png" alt="Pantera" />
+        </li>
+
+        <li class="personagem" id="guepardo" data-name="Guepardo"
+          data-description="O guepardo é um felino veloz e gracioso, sendo o animal terrestre mais rápido do mundo. Com sua estrutura esguia, garras retráteis e corpo projetado para a velocidade, o guepardo é um caçador formidável. ">
+          <img src="./src/imagens/guepardo-removebg-preview.png" alt="Guepardo" />
+        </li>
+
+        <li class="personagem" id="lince" data-name="Lince"
+          data-description="O lince é um felino de tamanho médio a grande, semelhante a um gato, variando de 70 cm a 130 cm de comprimento. Possui patas curtas em forma de raquetes, pelagem densa e destaca-se pelas orelhas pontiagudas com pelagem preta.">
+          <img src="./src/imagens/lince-removebg-preview.png" alt="Lince" />
+        </li>
+
+        <li class="personagem" id="caracal" data-name="Caracal"
+          data-description=" O caracal é um felino de porte médio com orelhas distintivamente longas com tufos de pelos na ponta. Ele possui uma pelagem curta, cor de areia a avermelhada, e destaca-se por sua agilidade e habilidade de salto.">
+          <img src="./src/imagens/caracal-removebg-preview.png" alt="Caracal" />
+        </li>
+
+        <li class="personagem" id="urso-pardo" data-name="Urso-pardo"
+          data-description="O urso pardo, também conhecido como urso-marrom, é uma espécie de urso encontrada em várias partes do mundo, incluindo América do Norte, Europa e Ásia. Eles são caracterizados por sua grande estrutura corporal, com uma pelagem densa e geralmente marrom.">
+          <img src="./src/imagens/urso-removebg-preview.png" alt="Urso-pardo" />
+        </li>
+
+        <li class="personagem" id="urso_polar" data-name="Urso-polar"
+          data-description="O urso-polar é um dos maiores carnívoros terrestres e é conhecido por sua pelagem branca espessa que os ajuda a se camuflar no gelo e na neve do Ártico. Eles têm um corpo robusto e adaptado para a vida no frio, com patas largas para nadar e uma camada de gordura isolante.">
+          <img src="./src/imagens/urso_polar-removebg-preview.png" alt="Urso-polar" />
+        </li>
+
+        <li class="personagem" id="panda_gigante" data-name="Panda-gigante"
+          data-description=" O panda-gigante é um mamífero nativo da China e é conhecido por sua aparência adorável e distintiva. Eles têm uma pelagem preta e branca única, com manchas pretas em seus olhos e orelhas. Os pandas-gigantes têm uma dieta principalmente vegetariana, alimentando-se principalmente de bambu.">
+          <img src="./src/imagens/panda_gigante-removebg-preview.png" alt="Panda-gigante" />
+        </li>
+
+        <li class="personagem" id="lobo" data-name="Lobo-Cinzento"
+          data-description="O lobo-cinzento é uma espécie de mamífero canino que vive em diferentes partes da América do Norte, Europa e Ásia. É conhecido por sua estrutura social complexa, vivendo em alcateias lideradas por um casal alfa. Possui uma pelagem densa de cor cinza, adaptada para climas frios.">
+          <img src="./src/imagens/lobo-removebg-preview.png" alt="Lobo-Cinzento" />
+        </li>
+
+        <li class="personagem" id="coiote" data-name="Coiote"
+          data-description="O coiote é um canídeo nativo das Américas, conhecido por seu tamanho médio, corpo esguio e focinho afilado. Ele tem uma pelagem densa e variável em tons de cinza e marrom. ">
+          <img src="./src/imagens/coiote-removebg-preview.png" alt="Coiote" />
+        </li>
+
+        <li class="personagem" id="chacal" data-name="Chacal"
+          data-description="Os chacais são mamíferos onívoros do gênero Canis, que também inclui os lobos, coiotes e o cão doméstico .Os chacais são canídeos de porte médio, costumando ser menores do que os lobos mas maiores do que as raposas ">
+          <img src="./src/imagens/chacal-removebg-preview (1).png" alt="Chacal" />
+        </li>
+
+
+        <li class="personagem" id="lobo_guara" data-name="Lobo-guará"
+          data-description="Um canídeo endêmico do Cerrado brasileiro, o lobo-guará possui uma pelagem avermelhada e pernas longas. Ele é conhecido por sua habilidade de encontrar frutas e raízes, complementando sua dieta de pequenos animais, e desempenha um papel importante na dispersão de sementes na região.">
+          <img src="./src/imagens/lobo-guara-removebg-preview.png" alt="Lobo-guará" />
+        </li>
+
+        <li class="personagem" id="dingo" data-name="Dingo"
+          data-description="O dingo é um canídeo selvagem encontrado principalmente na Austrália. Ele possui uma aparência semelhante à dos cães domésticos, mas com uma estrutura corporal mais robusta. Os dingos têm uma pelagem densa, geralmente em tons de amarelo a marrom, e são conhecidos por suas habilidades de caça e adaptação ao ambiente australiano.">
+          <img src="./src/imagens/dingo-removebg-preview.png" alt="Dingo" />
+        </li>
+
+        <li class="personagem" id="raposa" data-name="Raposa"
+          data-description="A raposa é um mamífero canino encontrado em várias partes do mundo, conhecido por sua agilidade e astúcia. Existem diferentes espécies de raposas, mas em geral elas possuem uma pelagem espessa e fofa, frequentemente em tons de marrom ou avermelhado.">
+          <img src="./src/imagens/raposa-removebg-preview.png" alt="Raposa" />
+        </li>
+
+        <li class="personagem" id="raposa_artico" data-name="Raposa-do-ártico"
+          data-description="Uma raposa adaptada ao frio extremo, com pelagem densa e branca no inverno e habilidades de camuflagem na neve.">
+          <img src="./src/imagens/raposa_artico-removebg-preview.png" alt="Raposa-do-ártico" />
+        </li>
+
+        <li class="personagem" id="guaxinim" data-name="Guaxinim"
+          data-description=": Mamífero de porte médio com pelagem espessa e anéis pretos e brancos em sua cauda. Possui uma máscara facial distintiva ao redor dos olhos, conferindo-lhe uma aparência característica.">
+          <img src="./src/imagens/guaxinim-removebg-preview.png" alt="Guaxinim" />
+        </li>
+
+        <li class="personagem" id="mabeco" data-name="Mabeco"
+          data-description="O mabeco também conhecido como cão-selvagem-africano ou cão-caçador-africano é um canídeo típico da África que vive em zonas de savana e vegetação esparsa. A espécie já foi comum em toda a África subsaariana (exceto em áreas de floresta tropical ou densa e zonas desérticas).">
+          <img src="./src/imagens/mabeco-removebg-preview.png" alt="Mabeco" />
+        </li>
+
+        <li class="personagem" id="hiena" data-name="Hiena"
+          data-description="A hiena é um mamífero carnívoro encontrado principalmente na África e em algumas partes da Ásia. Existem várias espécies de hienas, sendo a hiena-malhada e a hiena-castanha as mais conhecidas. Elas possuem corpos robustos, mandíbulas poderosas e uma pelagem áspera.">
+          <img src="./src/imagens/hiena-removebg-preview.png" alt="Hiena" />
+        </li>
+
+
+        <li class="personagem" id="diabo_da_tasmania" data-name="Diabo-da-tasmânia"
+          data-description="O diabo-da-Tasmânia é um marsupial nativo da ilha da Tasmânia, na Austrália. Possui uma aparência única, com um corpo robusto, cabeça larga e mandíbulas fortes. Sua pelagem é de cor escura, com manchas brancas no peito e nas costas.">
+          <img src="./src/imagens/diabo-da-tasmania-removebg-preview (1).png" alt="Diabo-da-tasmânia" />
+        </li>
+
+        <li class="personagem" id="gazela_de_thompson" data-name="Gazela de thompson"
+          data-description=" A gazela-de-Thomson é uma espécie de gazela encontrada nas planícies do leste da África. Ela tem uma pelagem curta e macia, com uma coloração marrom-avermelhada nas costas e flancos, e uma faixa preta distintiva que se estende dos ombros às coxas. As gazelas-de-Thomson são ágeis e rápidas, com chifres curvados nos machos.">
+          <img src="./src/imagens/gazela_de_thompson-removebg-preview.png" alt="Gazela_de_thompson" />
+        </li>
+
+        <li class="personagem" id="ocapi" data-name="Ocapi"
+          data-description="O ocapi é um mamífero nativo das florestas tropicais da República Democrática do Congo. Ele tem um corpo robusto, semelhante a uma girafa em miniatura, com pernas longas e uma pelagem densa e marrom. Uma das características mais distintivas do okapi são suas pernas listradas, semelhantes às de uma zebra. Eles têm uma língua preênsil longa e são parentes próximos das girafas.">
+          <img src="./src/imagens/ocapi-removebg-preview.png" alt="Ocapi" />
+        </li>
+
+        <li class="personagem" id="zebra" data-name="Zebra"
+          data-description="A zebra é um animal icônico encontrado principalmente nas savanas da África. Elas são conhecidas por sua pelagem listrada preta e branca, que é única para cada indivíduo. As zebras vivem em grupos chamados de manadas, onde se beneficiam da proteção e vigilância coletiva.">
+          <img src="./src/imagens/zebra-removebg-preview.png" alt="Zebra" />
+        </li>
+
+        <li class="personagem" id="girafa" data-name="Girafa"
+          data-description="A girafa é um animal extraordinário encontrado nas savanas da África. Conhecida por seu pescoço longo e elegante, a girafa é o mamífero terrestre mais alto e possui pernas longas e uma pelagem manchada.">
+          <img src="./src/imagens/girafa-removebg-preview.png" alt="Girafa" />
+        </li>
+
+        <li class="personagem" id="capivara" data-name="Capivara"
+          data-description="O maior roedor do mundo, com corpo grande e robusto, pelagem espessa e marrom. Possui patas curtas e é adaptada para nadar, sendo frequentemente encontrada em habitats aquáticos, como rios e lagoas.">
+          <img src="./src/imagens/capivara-removebg-preview.png" alt="Capivara" />
+        </li>
+
+        <li class="personagem" id="suricato" data-name="Suricato"
+          data-description="Pequeno mamífero com pelagem marrom-claro e listras escuras no corpo. Possui olhos grandes e expressivos, além de ser conhecido por sua postura ereta e hábitos sociais em grupos familiares.">
+          <img src="./src/imagens/suricato-removebg-preview.png" alt="Suricato" />
+        </li>
+
+        <li class="personagem" id="javali" data-name="Javali"
+          data-description="Suíno de tamanho médio a grande, com corpo robusto e pelagem curta e escura. Possui presas proeminentes e é conhecido por sua agressividade e comportamento territorial.">
+          <img src="./src/imagens/javali-removebg-preview.png" alt="Javali" />
+        </li>
+
+        <li class="personagem" id="elefante" data-name="Elefante"
+          data-description="O elefante é um dos maiores mamíferos terrestres do mundo. Com sua aparência imponente e característica tromba, eles são encontrados em diferentes partes do planeta, incluindo África e Ásia. Os elefantes possuem grandes presas de marfim e uma pele espessa e rugosa.">
+          <img src="./src/imagens/elefante-removebg-preview.png" alt="Elefante" />
+        </li>
+
+        <li class="personagem" id="bufalo" data-name="Bufálo"
+          data-description="O búfalo-africano, também conhecido como búfalo-do-cabo, é uma espécie de búfalo encontrada em várias áreas da África. Eles têm um corpo grande e robusto, com um par de chifres impressionantes que se curvam para cima e para o lado. A pelagem é escura e espessa, geralmente de cor marrom a preta. ">
+          <img src="./src/imagens/bufalo-removebg-preview.png" alt="Bufálo-africano" />
+        </li>
+
+        <li class="personagem" id="rinoceronte" data-name="Rinoceronte"
+          data-description="O rinoceronte é um poderoso mamífero herbívoro encontrado principalmente na África e na Ásia. Com sua pele espessa e chifres distintivos, os rinocerontes são criaturas impressionantes.">
+          <img src="./src/imagens/rinoceronte-removebg-preview.png" alt="Rinoceronte" />
+        </li>
+
+        <li class="personagem" id="hipopotamo" data-name="Hipopótamo"
+          data-description="O hipopótamo é um dos maiores mamíferos aquáticos, habitando os rios e lagos da África. Apesar de sua aparência desajeitada, eles são excelentes nadadores e podem ser extremamente agressivos quando ameaçados. ">
+          <img src="./src/imagens/hipopotamo-removebg-preview.png" alt="Hipopótamo" />
+        </li>
+
+        <li class="personagem" id="crocodilo" data-name="Crocodilo"
+          data-description="Os crocodilos são répteis aquáticos de grande porte, conhecidos por sua aparência pré-histórica e sua adaptação perfeita para a vida na água. Eles têm corpos alongados, mandíbulas fortes e dentes afiados. ">
+          <img src="./src/imagens/crocodilo-removebg-preview.png" alt="Crocodilo" />
+        </li>
+
+        <li class="personagem" id="dragao_de_komodo" data-name="Dragão-de-komodo"
+          data-description="Réptil gigante com escamas ásperas e uma língua bifurcada. Possui uma mandíbula poderosa e é o maior lagarto do mundo, capaz de caçar presas de grande porte.">
+          <img src="./src/imagens/dragao_komodo-removebg-preview.png" alt="Dragão-de-komodo" />
+        </li>
+
+        <li class="personagem" id="mico_leao_dourado" data-name="Mico-leão-dourado"
+          data-description="Um primata brasileiro com pelagem dourada brilhante e juba ao redor do rosto, altamente ameaçado e encontrado nas florestas tropicais do Rio de Janeiro.">
+          <img src="./src/imagens/mico_leao_dourado-removebg-preview.png" alt="Mico-leão-dourado" />
+        </li>
+
+        <li class="personagem" id="chimpanze" data-name="Chimpanzé"
+          data-description="Um primata altamente inteligente e social, o chimpanzé é conhecido por suas habilidades de uso de ferramentas e sua expressiva comunicação por gestos e vocalizações.">
+          <img src="./src/imagens/chimpanze-removebg-preview.png" alt="Chimpanzé" />
+        </li>
+
+        <li class="personagem" id="gorila" data-name="Gorila"
+          data-description="Um imponente e pacífico primata, o gorila possui um corpo musculoso e um rosto expressivo. Ele é conhecido por seu comportamento social complexo e sua habilidade de se comunicar através de vocalizações e gestos sutis.">
+          <img src="./src/imagens/gorila-removebg-preview.png" alt="Gorila" />
+        </li>
+
+      </ul>
+    </section>
+    <button class="btn-play">
+      <svg xmlns="http://www.w3.org/2000/svg" width="52" height="48" viewBox="0 0 24 24">
+        <path fill="black" d="M8 5v14l11-7z" />
+      </svg>
+    </button>
+    <br><br><br><br>
+    <section class="personagem-selecionado">
+      <img class="personagem-grande" src="./src/imagens/card-leao.png" alt="Personagem Selecionado" />
+      <div class="informacoes-personagem">
+        <h2 class="nome-personagem" id="nome-personagem">Leão</h2>
+        <p class="descricao-personagem" id="descricao-personagem">
+          Leões são majestosos felinos que habitam a savana africana. Conhecidos por suas crinas imponentes, são
+          símbolos de força e liderança. Em grupos chamados de coalizões, eles caçam em conjunto, mostrando sua
+          habilidade e estratégia.
+          <audio class="audio-player" controls>
+            <source src="" type="audio/mpeg">
+          </audio>
+
+        </p>
+      </div>
+    </section>
+  </main>
+  <script src="./src/js/index.js"></script>
+</body>
+
+</html>
