@@ -96,13 +96,13 @@ body::before{
 .personagem-selecionado {
     text-align: center;
     max-height: 530px;
-    background-color: rgba(51, 255, 0, 0.062);
+    background-color: rgba(166, 245, 146, 0.219);
 }
 
 .personagem-selecionado .personagem-grande {
     width: 430px;
     height: 430px;
-      background-color: rgba(51, 255, 0, 0.062);
+    background-color: rgba(166, 245, 146, 0.219);
 }
 
 .personagem-selecionado .nome-personagem {
@@ -117,7 +117,7 @@ body::before{
     text-align: center;
     margin-top: 20px;
     width: 420px;
-    background-color: rgba(51, 255, 0, 0.062)
+    background-color: rgba(166, 245, 146, 0.219);
 }
 
 
